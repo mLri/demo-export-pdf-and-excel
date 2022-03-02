@@ -1,9 +1,9 @@
 const express = require("express");
 
-var Promise = require("bluebird");
+// var Promise = require("bluebird");
 const puppeteer = require("puppeteer");
-const inlineCss = require("inline-css");
-const hb = require("handlebars");
+// const inlineCss = require("inline-css");
+// const hb = require("handlebars");
 const data_json = require("./data.json");
 
 const app = express();
@@ -79,12 +79,12 @@ app.use("/pdf", async (req, res, next) => {
 
     const page = await browser.newPage();
 
-    let data = await inlineCss(html, { url: "/" });
-    console.log("data -> ", data);
+    // let data = await inlineCss(html, { url: "/" });
+    // console.log("data -> ", data);
     // console.log("Compiling the template with handlebars");
 
     // We set the page content as the generated html by handlebars
-    await page.setContent(data, {
+    await page.setContent(html, {
       waitUntil: "networkidle0", // wait for page to load completely
     });
 
