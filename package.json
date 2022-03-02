@@ -1,0 +1,27 @@
+{
+  "name": "htmlToPdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:table": "node createTable.js",
+    "build:pdf": "node createTable.js && node createPdf.js",
+    "build:buffer": "node apiDowloadPdf.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "exceljs": "^4.3.0",
+    "express": "^4.17.3",
+    "handlebars": "^4.7.7",
+    "inline-css": "^3.0.0",
+    "puppeteer": "^13.4.0",
+    "xlsx": "^0.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

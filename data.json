@@ -1,0 +1,24 @@
+[
+    {},
+    {},
+    {
+     "invoiceId": 1,
+     "createdDate": "3/27/2018",
+     "dueDate": "5/24/2019",
+     "address": "28058 Hazelcrest Center",
+     "companyName": "Eayo",
+     "invoiceName": "Carbonated Water - Peach",
+     "price": 376
+    },
+    {
+     "invoiceId": 2,
+     "createdDate": "6/14/2018",
+     "dueDate": "11/14/2018",
+     "address": "6205 Shopko Court",
+     "companyName": "Ozu",
+     "invoiceName": "Pasta - Fusili Tri - Coloured",
+     "price": 285
+    },
+    {},
+    {}
+  ]
